@@ -33,7 +33,7 @@ class DataAdapter(val langList: List<Language>) :
 
         holder.itemView.setOnClickListener {
             val intent = Intent(it.context, WebActivity::class.java)
-            intent.putExtra("Title", languages.title)
+            intent.putExtra("Link", languages.link)
             it.context.startActivity(intent)
         }
 

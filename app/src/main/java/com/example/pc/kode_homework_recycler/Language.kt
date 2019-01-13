@@ -6,5 +6,6 @@ class Language(
     var paradigms: String,
     var data: Int,
     var index: Double,
-    var image: Int
+    var image: Int,
+    var link:String
 )

@@ -37,100 +37,116 @@ class MainActivity : AppCompatActivity() {
     private fun addItem() {
 
 
-        var Java = Language(
+        val Java = Language(
             "Java",
             "Джеймс Гослинг",
             resources.getText(R.string.java) as String,
             1995,
             16.904,
-            R.drawable.bitmap_java
+            R.drawable.bitmap_java, "https://ru.wikipedia.org/wiki/Java"
         )
         langList.add(Java)
 
-        var C =
-            Language("C", "Джеймс Гослинг", resources.getText(R.string.c) as String, 1972, 13.337, R.drawable.bitmap_c)
+        val C =
+            Language(
+                "C",
+                "Джеймс Гослинг",
+                resources.getText(R.string.c) as String,
+                1972,
+                13.337,
+                R.drawable.bitmap_c,
+                "https://ru.wikipedia.org/wiki/Си_(язык_программирования)"
+            )
         langList.add(C)
 
-        var Python =
+        val Python =
             Language(
                 "Python",
                 "Гвидо ван Россум",
                 resources.getText(R.string.python) as String,
                 1991,
                 8.294,
-                R.drawable.bitmap_python
+                R.drawable.bitmap_python,
+                "https://ru.wikipedia.org/wiki/Python"
             )
         langList.add(Python)
 
-        var Cpp = Language(
+        val Cpp = Language(
             "C++",
             "Бьёрн Страуструп",
             resources.getText(R.string.cpp) as String,
             1983,
             8.158,
-            R.drawable.bitmap_cpp
+            R.drawable.bitmap_cpp,
+            "https://ru.wikipedia.org/wiki/C%2B%2B"
         )
         langList.add(Cpp)
 
-        var VB =
+        val VB =
             Language(
                 "Visual Basic.NET",
                 "Билл Гейтс",
                 resources.getText(R.string.basic) as String,
                 1995,
                 6.459,
-                        R.drawable.bitmap_csharp
+                R.drawable.bitmap_csharp,
+                "https://ru.wikipedia.org/wiki/Visual_Basic"
             )
         langList.add(VB)
 
-        var javascript = Language(
+        val javascript = Language(
             "Javascript",
             "Брендан Эйх",
             resources.getText(R.string.javascript) as String,
             1995,
             3.302,
-            R.drawable.bitmap_java_script
+            R.drawable.bitmap_java_script,
+            "https://ru.wikipedia.org/wiki/JavaScript"
         )
         langList.add(javascript)
 
-        var C_sharp =
+        val C_sharp =
             Language(
                 "C#",
                 "Андерс Хейлсберг",
                 resources.getText(R.string.c_sharp) as String,
                 2000,
                 3.284,
-                R.drawable.c_sharp
+                R.drawable.c_sharp,
+                "https://ru.wikipedia.org/wiki/C_Sharp"
             )
         langList.add(C_sharp)
 
-        var php = Language(
+        val php = Language(
             "Php",
             "Расмус Лердорф",
             resources.getText(R.string.php) as String,
             1995,
             2.680,
-            R.drawable.bitmap_php
+            R.drawable.bitmap_php,
+            "https://ru.wikipedia.org/wiki/PHP"
         )
         langList.add(php)
 
-        var SQL = Language(
+        val SQL = Language(
             "SQL",
             "Дональд Чемберлин,Рэймонд Бойс",
             resources.getText(R.string.sql) as String,
             2008,
             2.277,
-            R.drawable.bitmap_sql
+            R.drawable.bitmap_sql,
+            "https://ru.wikipedia.org/wiki/SQL"
         )
         langList.add(SQL)
 
-        var Objective_C = Language(
+        val Objective_C = Language(
             "Objective-C",
             "Бред Кокс",
             resources.getText(R.string.objective_c) as String,
             1983,
             1.781,
-            R.drawable.bitmap_objective_c
+            R.drawable.bitmap_objective_c,
+            "https://ru.wikipedia.org/wiki/Objective-C"
         )
         langList.add(Objective_C)
     }
@@ -182,6 +198,60 @@ class MainActivity : AppCompatActivity() {
                 R.id.only_process -> {
                     val data: List<Language> =
                         langList.filter { i -> i.paradigms.findAnyOf(listOf("процедурный")) != null }
+                    updateActivity(data as ArrayList<Language>)
+                    true
+                }
+                R.id.only_struct -> {
+                    val data: List<Language> =
+                        langList.filter { i -> i.paradigms.findAnyOf(listOf("структурный")) != null }
+                    updateActivity(data as ArrayList<Language>)
+                    true
+                }
+                R.id.only_component -> {
+                    val data: List<Language> =
+                        langList.filter { i -> i.paradigms.findAnyOf(listOf("компонентно-ориентированный")) != null }
+                    updateActivity(data as ArrayList<Language>)
+                    true
+                }
+                R.id.only_obob -> {
+                    val data: List<Language> =
+                        langList.filter { i -> i.paradigms.findAnyOf(listOf("обобщённый")) != null }
+                    updateActivity(data as ArrayList<Language>)
+                    true
+                }
+                R.id.only_refl -> {
+                    val data: List<Language> =
+                        langList.filter { i -> i.paradigms.findAnyOf(listOf("рефлективный")) != null }
+                    updateActivity(data as ArrayList<Language>)
+                    true
+                }
+                R.id.only_imp -> {
+                    val data: List<Language> =
+                        langList.filter { i -> i.paradigms.findAnyOf(listOf("императивный")) != null }
+                    updateActivity(data as ArrayList<Language>)
+                    true
+                }
+                R.id.only_asp -> {
+                    val data: List<Language> =
+                        langList.filter { i -> i.paradigms.findAnyOf(listOf("аспектно-ориентированный")) != null }
+                    updateActivity(data as ArrayList<Language>)
+                    true
+                }
+                R.id.only_sobit -> {
+                    val data: List<Language> =
+                        langList.filter { i -> i.paradigms.findAnyOf(listOf("событийно-ориентированный")) != null }
+                    updateActivity(data as ArrayList<Language>)
+                    true
+                }
+                R.id.only_sten -> {
+                    val data: List<Language> =
+                        langList.filter { i -> i.paradigms.findAnyOf(listOf("сценарный")) != null }
+                    updateActivity(data as ArrayList<Language>)
+                    true
+                }
+                R.id.only_refl_or -> {
+                    val data: List<Language> =
+                        langList.filter { i -> i.paradigms.findAnyOf(listOf("рефлексивно-ориентированный")) != null }
                     updateActivity(data as ArrayList<Language>)
                     true
                 }

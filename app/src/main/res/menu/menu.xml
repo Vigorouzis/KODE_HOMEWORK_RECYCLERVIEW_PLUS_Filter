@@ -1,17 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:id="@+id/file"
-        android:title="@string/filter" >
+    <item
+        android:id="@+id/file"
+        android:title="@string/filter">
         <!-- "file" submenu -->
         <menu>
-            <item android:id="@+id/all"
+            <item
+                android:id="@+id/all"
                 android:title="@string/all" />
-            <item android:id="@+id/only_object"
+            <item
+                android:id="@+id/only_object"
                 android:title="@string/only_object" />
-            <item android:id="@+id/only_process"
-                android:title="@string/process"/>
-            <item android:id="@+id/only_fun"
-                android:title="@string/fun"/>
+            <item
+                android:id="@+id/only_process"
+                android:title="@string/only_process" />
+            <item
+                android:id="@+id/only_fun"
+                android:title="@string/only_fun" />
+            <item
+                android:id="@+id/only_struct"
+                android:title="@string/only_struct" />
+            <item
+                android:id="@+id/only_obob"
+                android:title="@string/only_obob" />
+            <item
+                android:id="@+id/only_component"
+                android:title="@string/only_component" />
+            <item
+                android:id="@+id/only_refl"
+                android:title="@string/only_refl" />
+            <item
+                android:id="@+id/only_imp"
+                android:title="@string/only_imp" />
+            <item
+                android:id="@+id/only_asp"
+                android:title="@string/only_asp" />
+            <item
+                android:id="@+id/only_sobit"
+                android:title="@string/only_sobit" />
+            <item
+                android:id="@+id/only_sten"
+                android:title="@string/only_sten" />
+            <item
+                android:id="@+id/only_refl_or"
+                android:title="@string/only_refl_or" />
         </menu>
     </item>
 </menu>

@@ -24,7 +24,18 @@
 
     <string name="filter">Фильтр</string>
     <string name="all">Все</string>
-    <string name="only_object">Только объектно-ориентированные</string>
-    <string name="process">Только процедурный</string>
-    <string name="fun">Только функциональный</string>
+
+    <string name="only_object">Объектно-ориентированные</string>
+    <string name="only_process">Процедурные</string>
+    <string name="only_fun">Функциональные</string>
+    <string name="only_struct">Структурные</string>
+    <string name="only_component">Компонентно-ориентрированные</string>
+    <string name="only_obob">Обобщенные</string>
+    <string name="only_refl">Рефлективные</string>
+    <string name="only_imp">Императивные</string>
+    <string name="only_asp">Аспектно-ориентированные</string>
+    <string name="only_sobit">Событийно-ориентированные</string>
+    <string name="only_sten">Сценарные</string>
+    <string name="only_refl_or">Рефлексивно-ориентированные</string>
+
 </resources>
