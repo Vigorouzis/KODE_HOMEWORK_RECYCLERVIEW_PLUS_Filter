@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/file"
+        android:title="@string/filter" >
+        <!-- "file" submenu -->
+        <menu>
+            <item android:id="@+id/all"
+                android:title="@string/all" />
+            <item android:id="@+id/only_object"
+                android:title="@string/only_object" />
+            <item android:id="@+id/only_process"
+                android:title="@string/process"/>
+            <item android:id="@+id/only_fun"
+                android:title="@string/fun"/>
+        </menu>
+    </item>
+</menu>
