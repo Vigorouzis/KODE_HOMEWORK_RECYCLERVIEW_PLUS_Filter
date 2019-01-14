@@ -1,11 +1,11 @@
 package com.example.pc.kode_homework_recycler
 
-class Language(
-    var title: String,
-    var author: String,
-    var paradigms: String,
-    var data: Int,
-    var index: Double,
-    var image: Int,
-    var link:String
+data class Language(
+    val title: String,
+    val author: String,
+    val paradigms: String,
+    val data: Int,
+    val index: Double,
+    val image: Int,
+    val link: String
 )

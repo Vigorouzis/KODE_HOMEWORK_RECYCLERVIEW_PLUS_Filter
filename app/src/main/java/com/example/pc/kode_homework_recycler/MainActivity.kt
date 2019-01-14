@@ -153,7 +153,7 @@ class MainActivity : AppCompatActivity() {
 
 
     //update cardViews to data array
-    private fun updateActivity(data: ArrayList<Language>) {
+    private fun updateActivity(data:List<Language>) {
         viewManager = GridLayoutManager(this, 1)
         viewAdapter = DataAdapter(data)
 
@@ -186,73 +186,73 @@ class MainActivity : AppCompatActivity() {
                 R.id.only_object -> {
                     val data: List<Language> =
                         langList.filter { i -> i.paradigms.findAnyOf(listOf("объектно-ориентированный")) != null }
-                    updateActivity(data as ArrayList<Language>)
+                    updateActivity(data)
                     true
                 }
                 R.id.only_fun -> {
                     val data: List<Language> =
                         langList.filter { i -> i.paradigms.findAnyOf(listOf("функциональный")) != null }
-                    updateActivity(data as ArrayList<Language>)
+                    updateActivity(data)
                     true
                 }
                 R.id.only_process -> {
                     val data: List<Language> =
                         langList.filter { i -> i.paradigms.findAnyOf(listOf("процедурный")) != null }
-                    updateActivity(data as ArrayList<Language>)
+                    updateActivity(data)
                     true
                 }
                 R.id.only_struct -> {
                     val data: List<Language> =
                         langList.filter { i -> i.paradigms.findAnyOf(listOf("структурный")) != null }
-                    updateActivity(data as ArrayList<Language>)
+                    updateActivity(data)
                     true
                 }
                 R.id.only_component -> {
                     val data: List<Language> =
                         langList.filter { i -> i.paradigms.findAnyOf(listOf("компонентно-ориентированный")) != null }
-                    updateActivity(data as ArrayList<Language>)
+                    updateActivity(data)
                     true
                 }
                 R.id.only_obob -> {
                     val data: List<Language> =
                         langList.filter { i -> i.paradigms.findAnyOf(listOf("обобщённый")) != null }
-                    updateActivity(data as ArrayList<Language>)
+                    updateActivity(data)
                     true
                 }
                 R.id.only_refl -> {
                     val data: List<Language> =
                         langList.filter { i -> i.paradigms.findAnyOf(listOf("рефлективный")) != null }
-                    updateActivity(data as ArrayList<Language>)
+                    updateActivity(data)
                     true
                 }
                 R.id.only_imp -> {
                     val data: List<Language> =
                         langList.filter { i -> i.paradigms.findAnyOf(listOf("императивный")) != null }
-                    updateActivity(data as ArrayList<Language>)
+                    updateActivity(data)
                     true
                 }
                 R.id.only_asp -> {
                     val data: List<Language> =
                         langList.filter { i -> i.paradigms.findAnyOf(listOf("аспектно-ориентированный")) != null }
-                    updateActivity(data as ArrayList<Language>)
+                    updateActivity(data)
                     true
                 }
                 R.id.only_sobit -> {
                     val data: List<Language> =
                         langList.filter { i -> i.paradigms.findAnyOf(listOf("событийно-ориентированный")) != null }
-                    updateActivity(data as ArrayList<Language>)
+                    updateActivity(data)
                     true
                 }
                 R.id.only_sten -> {
                     val data: List<Language> =
                         langList.filter { i -> i.paradigms.findAnyOf(listOf("сценарный")) != null }
-                    updateActivity(data as ArrayList<Language>)
+                    updateActivity(data)
                     true
                 }
                 R.id.only_refl_or -> {
                     val data: List<Language> =
                         langList.filter { i -> i.paradigms.findAnyOf(listOf("рефлексивно-ориентированный")) != null }
-                    updateActivity(data as ArrayList<Language>)
+                    updateActivity(data)
                     true
                 }
                 else -> super.onOptionsItemSelected(item)
